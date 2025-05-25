@@ -1,0 +1,166 @@
+<!-- classic-collection.html -->
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Классическая коллекция - Букетная Магия</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Шапка -->
+    <header class="header">
+        <div class="container">
+            <div class="logo-section">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="Логотип Букетная Магия" class="logo">
+                </a>
+                <div class="logo-text">
+                    <span class="top-line">букетная</span>
+                    <span class="bottom-line">магия</span>
+                </div>
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li><a href="about.html">О нас</a></li>
+                    <li><a href="promotions.html">Акции</a></li>
+                    <li><a href="catalog.html">Каталог</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Основная секция (заголовок + фильтры + товары) -->
+    <section class="catalog-section">
+        <!-- Заголовок (тот же класс, что и на catalog.html) -->
+        <h2 class="catalog-title">КЛАССИЧЕСКАЯ КОЛЛЕКЦИЯ</h2>
+
+        <!-- Четыре кнопки-фильтра, как в каталоге -->
+        <div class="filter-container">
+            <button class="filter-button" onclick="window.location.href='catalog.html'">Все</button>
+            <button class="filter-button">Классическая коллекция</button>
+            <button class="filter-button" onclick="window.location.href='wedding-bouquets.html'">Свадебные букеты</button>
+            <button class="filter-button" onclick="window.location.href='promotions.html'">
+                Сезонные предложения
+            </button>
+        </div>
+
+        <!-- Сетка товаров: 3 ряда × 4 товара -->
+        <div class="products-container">
+            <div class="products-grid">
+                <div class="product-item">
+                    <img src="images/product9.png" alt="Нежность">
+                    <p class="product-text">"Нежность"</p>
+                    <button class="buy-button">Купить</button>
+                </div>
+                <div class="product-item">
+                    <img src="images/product10.png" alt="Фантазия">
+                    <p class="product-text">"Фантазия"</p>
+                    <button class="buy-button">Купить</button>
+                </div>
+                <div class="product-item">
+                    <img src="images/product11.png" alt="Вдохновение">
+                    <p class="product-text">"Вдохновение"</p>
+                    <button class="buy-button">Купить</button>
+                </div>
+                <div class="product-item">
+                    <img src="images/product12.png" alt="Гармония">
+                    <p class="product-text">"Гармония"</p>
+                    <button class="buy-button">Купить</button>
+                </div>
+            </div>
+            <div class="products-grid" style="margin-top: 40px;">
+                <div class="product-item">
+                    <img src="images/product5.png" alt="Искра">
+                    <p class="product-text">"Искра"</p>
+                    <button class="buy-button">Купить</button>
+                </div>
+                <div class="product-item">
+                    <img src="images/product6.png" alt="Сияние">
+                    <p class="product-text">"Сияние"</p>
+                    <button class="buy-button">Купить</button>
+                </div>
+                <div class="product-item">
+                    <img src="images/product7.png" alt="Тайна">
+                    <p class="product-text">"Тайна"</p>
+                    <button class="buy-button">Купить</button>
+                </div>
+                <div class="product-item">
+                    <img src="images/product8.png" alt="Мечта">
+                    <p class="product-text">"Мечта"</p>
+                    <button class="buy-button">Купить</button>
+                </div>
+            </div>
+            <div class="products-grid" style="margin-top: 40px;">
+                <div class="product-item">
+                    <img src="images/product1.png" alt="Тепло души">
+                    <p class="product-text">"Тепло души"</p>
+                    <button class="buy-button">Купить</button>
+                </div>
+                <div class="product-item">
+                    <img src="images/product2.png" alt="Полёт мечты">
+                    <p class="product-text">"Полёт мечты"</p>
+                    <button class="buy-button">Купить</button>
+                </div>
+                <div class="product-item">
+                    <img src="images/product3.png" alt="Нежная мелодия">
+                    <p class="product-text">"Нежная мелодия"</p>
+                    <button class="buy-button">Купить</button>
+                </div>
+                <div class="product-item">
+                    <img src="images/product4.png" alt="Тайна заката">
+                    <p class="product-text">"Тайна заката"</p>
+                    <button class="buy-button">Купить</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Подвал -->
+    <footer class="footer">
+        <div class="container">
+            <div class="logo-section">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="Логотип Букетная Магия" class="logo">
+                </a>
+                <div class="logo-text">
+                    <span class="top-line">букетная</span>
+                    <span class="bottom-line">магия</span>
+                </div>
+            </div>
+            <div class="social-icons">
+                <a href="contacts.html" class="social-icon"><img src="images/instagram.png" alt="Instagram"></a>
+                <a href="contacts.html" class="social-icon"><img src="images/whatsapp.png" alt="WhatsApp"></a>
+                <a href="contacts.html" class="social-icon"><img src="images/telegram.png" alt="Telegram"></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+   <!-- Модальное окно формы -->
+<div id="orderModal" class="modal">
+    <div class="modal-content">
+        <span class="close-button" onclick="closeModal('orderModal')">&times;</span>
+        <h3>Оформление заказа</h3>
+        <label for="name">Ваше имя:</label>
+        <input type="text" id="name" placeholder="Введите имя">
+        <label for="phone">Номер телефона:</label>
+        <input type="tel" id="phone" placeholder="Введите номер">
+        <button onclick="submitOrder()">Отправить заявку</button>
+    </div>
+</div>
+
+<!-- Модальное окно подтверждения -->
+<div id="thankYouModal" class="modal">
+    <div class="modal-content">
+        <span class="close-button" onclick="closeModal('thankYouModal')">&times;</span>
+        <h3>Ожидайте звонка!</h3>
+    </div>
+</div>
+
+</body>
+</html>
