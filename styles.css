@@ -1009,3 +1009,110 @@ body {
         height: 300px;
     }
 }
+/* --- Улучшенная адаптация для мобильных и планшетов --- */
+@media (max-width: 768px) {
+    .header .container,
+    .footer .container {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+        gap: 15px;
+        align-items: flex-start;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        gap: 15px;
+        padding-left: 0;
+    }
+
+    .logo-section {
+        flex-direction: row;
+        justify-content: flex-start;
+        width: 100%;
+    }
+
+    .social-icons {
+        justify-content: flex-start;
+    }
+
+    .products-grid,
+    .team-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .promo-item,
+    .review-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .promo-content,
+    .review-text {
+        padding: 20px;
+    }
+
+    .advantage-card {
+        width: 100%;
+    }
+
+    .cards-container {
+        grid-template-columns: 1fr;
+    }
+
+    .filter-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .menu ul li a,
+    .product-text,
+    .promo-text,
+    .promo-title,
+    .advantages-title,
+    .filter-button,
+    .buy-button,
+    .section-title {
+        font-size: 16px;
+    }
+
+    .products-grid,
+    .team-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .container,
+    .content-container,
+    .catalog-section,
+    .popular-products,
+    .promotions-section,
+    .advantages,
+    .about-section,
+    .contact-section {
+        padding: 20px;
+    }
+
+    .promo-image {
+        height: 220px;
+    }
+
+    .logo {
+        width: 48px;
+        height: 48px;
+    }
+
+    .logo-text {
+        font-size: 16px;
+    }
+
+    .modal-content {
+        width: 95%;
+    }
+
+    .info-card {
+        font-size: 15px;
+        padding: 15px;
+    }
+}
