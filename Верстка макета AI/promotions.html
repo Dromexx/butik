@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Акции - Букетная Магия</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Шапка -->
+    <header class="header">
+        <div class="container">
+            <div class="logo-section">
+                <a href="index.html">
+                <img src="images/logo.png" alt="Логотип Букетная Магия" class="logo">
+                </a>
+                <div class="logo-text">
+                    <span class="top-line">букетная</span>
+                    <span class="bottom-line">магия</span>
+                </div>
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li><a href="about.html">О нас</a></li>
+                    <li><a href="promotions.html">Акции</a></li>
+                    <li><a href="catalog.html">Каталог</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Секция акций -->
+    <section class="promotions-section">
+        <h2 class="section-title">СЕЗОННЫЕ ПРЕДЛОЖЕНИЯ</h2>
+        <div class="promotions-container">
+            <div class="promo-item">
+                <div class="promo-image">
+                    <img src="images/promo1.png" alt="Акционный букет 1">
+                </div>
+                <div class="promo-content">
+                    <h3 class="promo-title">Золотая симфония</h3>
+                    <p class="promo-text">Композиция, вдохновлённая богатством и щедростью осеннего сезона. В нём сочетается атмосфера радости и света. Яркие акценты наполняют его красками, а нежные оттенки добавляют свежести и мягкости.</p>
+                    <button class="buy-button">Купить</button>
+                </div>
+            </div>
+            <div class="promo-item">
+                <div class="promo-image">
+                    <img src="images/promo2.png" alt="Акционный букет 2">
+                </div>
+                <div class="promo-content">
+                    <h3 class="promo-title">Рассвет надежды</h3>
+                    <p class="promo-text">Лёгкий и свежий, этот букет отражает пробуждение природы после долгой зимы. Он несёт нежность и новую энергию, как предвкушение тёплых, солнечных дней и расцвета жизни.</p>
+                    <button class="buy-button">Купить</button>
+                </div>
+            </div>
+            <div class="promo-item">
+                <div class="promo-image">
+                    <img src="images/promo3.png" alt="Акционный букет 3">
+                </div>
+                <div class="promo-content">
+                    <h3 class="promo-title">Морозное волшебство</h3>
+                    <p class="promo-text">Холодная изысканность и лёгкий блеск этого букета передают магию зимней сказки. В его форме и текстурах ощущается тишина и загадочность морозного утра. Каждая деталь будто тронута инеем, переливаясь хрустальным сиянием.</p>
+                    <button class="buy-button">Купить</button>
+                </div>
+            </div>
+            <div class="promo-item">
+                <div class="promo-image">
+                    <img src="images/promo4.png" alt="Акционный букет 4">
+                </div>
+                <div class="promo-content">
+                    <h3 class="promo-title">Солнечное утро</h3>
+                    <p class="promo-text">Этот букет дарит ощущение тепла и беззаботности летнего дня. В нём сочетаются лёгкость и игривость, передавая атмосферу природы в её самом ярком проявлении.</p>
+                    <button class="buy-button">Купить</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Подвал -->
+    <footer class="footer">
+        <div class="container">
+            <div class="logo-section">
+                <a href="index.html">
+                <img src="images/logo.png" alt="Логотип Букетная Магия" class="logo">
+                </a>
+                <div class="logo-text">
+                    <span class="top-line">букетная</span>
+                    <span class="bottom-line">магия</span>
+                </div>
+            </div>
+            <div class="social-icons">
+                <a href="contacts.html" class="social-icon"><img src="images/instagram.png" alt="Instagram"></a>
+                <a href="contacts.html" class="social-icon"><img src="images/whatsapp.png" alt="WhatsApp"></a>
+                <a href="contacts.html" class="social-icon"><img src="images/telegram.png" alt="Telegram"></a>
+            </div>
+        </div>
+    </footer>
+    <script src="scripts.js"></script>
+   <!-- Модальное окно формы -->
+<div id="orderModal" class="modal">
+    <div class="modal-content">
+        <span class="close-button" onclick="closeModal('orderModal')">&times;</span>
+        <h3>Оформление заказа</h3>
+        <label for="name">Ваше имя:</label>
+        <input type="text" id="name" placeholder="Введите имя">
+        <label for="phone">Номер телефона:</label>
+        <input type="tel" id="phone" placeholder="Введите номер">
+        <button onclick="submitOrder()">Отправить заявку</button>
+    </div>
+</div>
+
+<!-- Модальное окно подтверждения -->
+<div id="thankYouModal" class="modal">
+    <div class="modal-content">
+        <span class="close-button" onclick="closeModal('thankYouModal')">&times;</span>
+        <h3>Ожидайте звонка!</h3>
+    </div>
+</div>
+
+</body>
+</html>
